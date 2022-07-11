@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 
 int checkamp(char *format, va_list args)
 {
@@ -28,4 +29,5 @@ int checkamp(char *format, va_list args)
     }
     else
         return -1;
+        va_end(args);
 }
